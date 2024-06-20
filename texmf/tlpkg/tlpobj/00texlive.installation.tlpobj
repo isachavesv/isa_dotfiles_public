@@ -1,0 +1,5 @@
+name 00texlive.installation
+category TLCore
+depend setting_available_architectures:
+depend opt_location:ftp://tug.org/historic/systems/texlive/2017/tlnet-final
+depend setting_usertree:1

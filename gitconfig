@@ -1,0 +1,7 @@
+[user]
+	name = Isa Chaves V
+	email = isa.chaves.v@gmail.com
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[core]
+	editor = vim

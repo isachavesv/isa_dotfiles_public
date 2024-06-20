@@ -1,0 +1,111 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+%Vim code to get last change dates, etc.
+% Bob Hall's Beamer Template, with happymutant.com (Christina Ramey) vim tips incorporated
+\documentclass[11pt,ignorenonframetext]{beamer}
+
+%As handout
+%\documentclass[12pt,handout]{beamer}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+%For customized theorem environments
+\usepackage{amssymb}
+\usepackage{mathtools}
+%For \smashoperator
+\usepackage{bm}
+% for bold math fonts
+% For drawings
+\usepackage{tikz}
+\usepackage{graphicx}
+%For subfigures
+\usepackage{caption}
+\usepackage{subcaption}
+%For bibliography
+\usepackage{natbib}
+
+
+
+\newcommand{\ubar}[1]{\text{\b{$#1$}}}
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\set}[1]{\mathcal{#1}}
+\newcommand{\R}{\field{R}}
+\newcommand{\E}{\field{E}}
+\newcommand{\PP}{\field{P}}
+\newcommand{\argmax}[1]{\underset{#1}{\operatorname{arg}\,\operatorname{max}}\;}
+
+%Environments
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+%\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{claim}{Claim}
+\newtheorem*{claim*}{Claim}
+%\newtheorem{definition}{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{assumption*}{Assumption}
+\newtheorem{conjecture*}{Conjecture}
+\newtheorem{exmp}{Example}
+\newtheorem{rem}{Remark}
+%\newtheorem{note}{Note}
+\newtheorem{case}{Case}
+
+
+% If you want to print handouts
+%\documentclass[handout]{beamer}
+
+% Changing the fonts: this will make the slides more readable and the math look like regular tex math
+\usefonttheme{serif}
+
+% Titles will appear in Small Cap Serif
+\usefonttheme{structuresmallcapsserif}
+
+% -----------------------------------------
+% Center the Frame Title
+% -----------------------------------------
+
+\setbeamertemplate{frametitle} {
+\begin{centering}
+\vspace{0.1in} \insertframetitle
+\par
+\end{centering}
+}
+
+% -----------------------------------------
+% Number the slides
+% -----------------------------------------
+
+\setbeamertemplate{footline}[frame number]
+
+% -----------------------------------------
+% Get rid of the irritating navigation bar
+% -----------------------------------------
+
+\setbeamertemplate{navigation symbols}{}
+\title{<++>}
+\author{}
+
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{<++>}<++>
+\end{frame}
+
+\begin{frame}
+\frametitle{<++>}<++>
+\end{frame}
+
+\begin{frame}
+\frametitle{<++>}<++>
+\end{frame}
+
+\end{document}

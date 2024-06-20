@@ -1,0 +1,17 @@
+
+echo "go to github and add your key (in the clipboard)"
+################## git must be installed, dotfiles cloned first. Before running, get keys set up
+### ssh setup
+# ssh-keygen -t rsa -b 4096 -C "isa.chaves.v@gmail.com"
+#### will ask for passphrase prompt etc
+# xclip -sel clip < ~/.ssh/id_rsa.pub [in linux]
+# cat ~/.ssh/id_rsa.pub | pbcopy in mac[in mac]
+cd ~/
+brew install vim
+brew install --cask mactex
+brew install zsh
+# avoid using pip, always gives errors
+######## tex setup
+ln -s ~/dotfiles/texmf ~/texmf
+texhash ~/texmf
+chsh -s `which zsh`

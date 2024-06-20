@@ -1,0 +1,67 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+\documentclass[a4paper,12pt]{article}
+%\usepackage[margin = 1in]{geometry}
+%For margins, specify one by one or all at once
+%\usepackage{setspace}
+% for line spacing
+\usepackage{amsmath}
+\usepackage{amsthm}
+%For customized theorem environments
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{appendix}
+%For todo
+\usepackage{color}
+%For \smashoperator
+\usepackage{bm}
+% for bold math fonts
+%For drawings
+\usepackage{tikz}
+\usepackage{graphicx}
+%For subfigures
+\usepackage{caption}
+\usepackage{subcaption}
+%For bibliography
+\usepackage{natbib}
+%For normal form games
+\usepackage{sgame}
+\newcommand{\todo}[1]{\marginpar{ \color{blue} \tiny \textbf{#1}}}
+
+\newcommand{\ubar}[1]{\text{\b{$#1$}}}
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\set}[1]{\mathcal{#1}}
+\newcommand{\R}{\field{R}}
+\newcommand{\E}{\field{E}}
+\newcommand{\PP}{\field{P}}
+\newcommand{\argmax}[1]{\underset{#1}{\operatorname{arg}\,\operatorname{max}}\;}
+
+%Environments
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{assumption*}{Assumption}
+\newtheorem{conjecture*}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\newtheorem{note}{Note}
+\newtheorem{case}{Case}
+\author{Isa\'{i}as Chaves Villamizar}
+\title{<++>}
+%\date{\vspace{-5ex}}
+%shrinks huge space after date, removes date
+%\doublespacing
+\begin{document}
+\maketitle
+<++>
+%\bibliography{<++>}
+%\bibliographystyle{te}
+%Need bst file in same folder, or texmf path set up
+\end{document}

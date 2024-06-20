@@ -1,0 +1,10 @@
+# Generates key
+ssh-keygen -t rsa -b 4096 -C "isa.chaves.v@gmail.com"
+# Will prompt for passphrase"
+eval "(ssh-agent -s)" 
+# initiates keyring
+ssh-add ~/.ssh/id_rsa
+#### Now add to github
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+echo "Now paste your clipboard onto add key in github's web GUI"

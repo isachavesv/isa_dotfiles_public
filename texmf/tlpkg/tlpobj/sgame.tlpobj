@@ -1,0 +1,22 @@
+name sgame
+category Package
+revision 30959
+shortdesc LaTeX style for typesetting strategic games
+longdesc Formats strategic games. For a 2x2 game, for example, the
+longdesc input: \begin{game}{2}{2} &$L$ &$M$\\ $T$ &$2,2$ &$2,0$\\ $B$
+longdesc &$3,0$ &$0,9$ \end{game} produces output with (a) boxes around
+longdesc the payoffs, (b) payoff columns of equal width, and (c) payoffs
+longdesc vertically centered within the boxes. Note that the game
+longdesc environment will not work in the argument of another command.
+containersize 4532
+containerchecksum 44350a95a44bf14c5a805d02d6a1df15c967ed2e98a774c80ca5808228a56db6b3ddd8dd25b0f0b598cdb69348c70dc611ef1fa429fb3e0ca6804a7fbb6ffb0d
+doccontainersize 69156
+doccontainerchecksum 7dfce25a17f66fcb333ca12c3abdf9035461463edc75951a0988ac4a4bcb499d1d8b21486abc40f0e2c4193561022e85c0724620da0f3c5b175c3f1b78fdbaab
+runfiles size=8
+ tex/latex/sgame/sgame.sty
+ tex/latex/sgame/sgamevar.sty
+catalogue-ctan /macros/latex/contrib/sgame
+catalogue-date 2016-06-24 19:18:15 +0200
+catalogue-license lppl
+catalogue-topics games
+catalogue-version 2.15

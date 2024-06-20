@@ -1,0 +1,109 @@
+name 00texlive.installation
+category TLCore
+depend setting_available_architectures:
+depend opt_location:http://mirror.ctan.org/systems/texlive/tlnet
+depend setting_usertree:1
+
+name bezos
+category Package
+revision 25507
+shortdesc Packages by Javier Bezos
+longdesc A set of packages that provide: tools for maths accents; a tool
+longdesc that changes page-numbering in frontmatter to arabic; tools for
+longdesc dealing with some annoyances in babel; a tool for making end-
+longdesc environment checking more meaningful; tensorial indexes;
+longdesc support for multi-file documents; tools for easy entry of
+longdesc Spanish index entries; dotless i's and j's for maths fonts; and
+longdesc fancy underlining.
+containersize 12140
+containerchecksum abee3d5674aab634f6134c1576c98f1513605e5e2e242000bfd8b2877f38e7572d73125a1fd9f74cfc684bf4b0ea5f1835944733145750db973ea52a01a528f5
+doccontainersize 942952
+doccontainerchecksum 81c6c074e0ad72a07b8e4fbc88b225ac54aed29c79eab5259cf5a4e5a47b121bbbde32dfeaddbc6ea9a45e7d28288a97692e4e9f7302b3d133ae190add757ca3
+runfiles size=16
+ tex/latex/bezos/accents.sty
+ tex/latex/bezos/arabicfront.sty
+ tex/latex/bezos/babeltools.sty
+ tex/latex/bezos/checkend.sty
+ tex/latex/bezos/dotlessi.sty
+ tex/latex/bezos/esindex.sty
+ tex/latex/bezos/soulpos.sty
+ tex/latex/bezos/subdocs.sty
+ tex/latex/bezos/tensind.sty
+catalogue-ctan /macros/latex/contrib/bezos
+catalogue-date 2016-06-24 19:18:15 +0200
+catalogue-license lppl
+catalogue-topics collection
+
+name enumitem
+category Package
+revision 24146
+shortdesc Control layout of itemize, enumerate, description
+longdesc This package provides user control over the layout of the three
+longdesc basic list environments: enumerate, itemize and description. It
+longdesc supersedes both enumerate and mdwlist (providing well-
+longdesc structured replacements for all their funtionality), and in
+longdesc addition provides functions to compute the layout of labels,
+longdesc and to 'clone' the standard environments, to create new
+longdesc environments with counters of their own.
+containersize 11352
+containerchecksum b0a428361b4dc4865dc1703a155b955ff16089149980e967f558d27238c89f19c61af96002c039b0fccd97e675f1ebb3247a140ad3fa8f21d4b736ef87bc4d2b
+doccontainersize 346268
+doccontainerchecksum 72d7c6a58be78ccadaac6dc77485d3b191c1eb23959899d9b9cbe252d58c77ef7e540c59c435f4db1ddce1baefb2147fa673c602f5e7d5284e4c428aa5dc7a5a
+runfiles size=11
+ tex/latex/enumitem/enumitem.sty
+catalogue-ctan /macros/latex/contrib/enumitem
+catalogue-date 2016-06-24 19:18:15 +0200
+catalogue-license lppl
+catalogue-topics list
+catalogue-version 3.5.2
+
+name etoolbox
+category Package
+revision 45884
+shortdesc e-TeX tools for LaTeX
+longdesc The package is a toolbox of programming facilities geared
+longdesc primarily towards LaTeX class and package authors. It provides
+longdesc LaTeX frontends to some of the new primitives provided by e-TeX
+longdesc as well as some generic tools which are not strictly related to
+longdesc e-TeX but match the profile of this package. Note that the
+longdesc initial versions of this package were released under the name
+longdesc elatex. The package provides functions that seem to offer
+longdesc alternative ways of implementing some LaTeX kernel commands;
+longdesc nevertheless, the package will not modify any part of the LaTeX
+longdesc kernel.
+containersize 8152
+containerchecksum d1bc229baff7af2845e6e21cc8c6f58fbf0b82774eccf01925999eca7fbca9c05f825085caf8a34ff8e70715bc5c455b047f0fcec39b87096a819c6993173209
+doccontainersize 234344
+doccontainerchecksum 72b66952d3ee942546fdc3d1b02190ddfa39496cc7e673f72bbb43ffaf249ac72a83838f583e0290471c9ff29ea4120e5f014c80784ee0741014a3daf00c8293
+runfiles size=12
+ tex/latex/etoolbox/etoolbox.def
+ tex/latex/etoolbox/etoolbox.sty
+catalogue-ctan /macros/latex/contrib/etoolbox
+catalogue-date 2017-11-22 20:43:23 +0100
+catalogue-license lppl1.3c
+catalogue-topics macro-supp
+catalogue-version 2.5
+
+name sgame
+category Package
+revision 30959
+shortdesc LaTeX style for typesetting strategic games
+longdesc Formats strategic games. For a 2x2 game, for example, the
+longdesc input: \begin{game}{2}{2} &$L$ &$M$\\ $T$ &$2,2$ &$2,0$\\ $B$
+longdesc &$3,0$ &$0,9$ \end{game} produces output with (a) boxes around
+longdesc the payoffs, (b) payoff columns of equal width, and (c) payoffs
+longdesc vertically centered within the boxes. Note that the game
+longdesc environment will not work in the argument of another command.
+containersize 4532
+containerchecksum 44350a95a44bf14c5a805d02d6a1df15c967ed2e98a774c80ca5808228a56db6b3ddd8dd25b0f0b598cdb69348c70dc611ef1fa429fb3e0ca6804a7fbb6ffb0d
+doccontainersize 69156
+doccontainerchecksum 7dfce25a17f66fcb333ca12c3abdf9035461463edc75951a0988ac4a4bcb499d1d8b21486abc40f0e2c4193561022e85c0724620da0f3c5b175c3f1b78fdbaab
+runfiles size=8
+ tex/latex/sgame/sgame.sty
+ tex/latex/sgame/sgamevar.sty
+catalogue-ctan /macros/latex/contrib/sgame
+catalogue-date 2016-06-24 19:18:15 +0200
+catalogue-license lppl
+catalogue-topics games
+catalogue-version 2.15
+

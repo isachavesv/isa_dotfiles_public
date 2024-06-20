@@ -1,0 +1,27 @@
+################## git must be installed, dotfiles cloned first
+sudo apt-get update
+sudo apt-get install vim vim-nox tint2 terminator clipit dmenu zsh conky openbox evince htop texlive-full latexmk python3-numpy python3-scipy ipython3 python3-matplotlib xzdec xclip
+# xclip for copying from command line
+# without flag, 1.5 GB. With, 16 MB ...
+# Non-conda install, update this
+sudo apt-get install python3-sympy --no-install-recommends
+#get rid of latex documentation clutter
+sudo apt-get remove texlive-fonts-recommended-doc texlive-latex-base-doc texlive-latex-recommended-doc texlive-pictures-doc texlive-pstricks-doc
+# these lines are a bit experimental
+### ssh setup
+ssh-keygen -t rsa -b 4096 -C "isa.chaves.v@gmail.com"
+#### will ask for passphrase prompt etc
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+xclip -sel clip < ~/.ssh/id_rsa.pub
+echo "Now go to github and add your key (in the clipboard)"
+cd ~/
+git clone git@github.com:isachavesv/projectsIsa.git 
+git clone git@github.com:isachavesv/isachavesv.github.io
+git clone git@github.com:isachavesv/solicitationBargaining.git 
+git clone git@github.com:isachavesv/commodityExchange.git 
+git clone git@github.com:shota2/timing.git 
+######## tex setup
+ln -s ~/dotfiles/texmf ~/texmf
+texhash ~/texmf
+chsh -s `which zsh`

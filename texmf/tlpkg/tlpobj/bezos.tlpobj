@@ -1,0 +1,29 @@
+name bezos
+category Package
+revision 25507
+shortdesc Packages by Javier Bezos
+longdesc A set of packages that provide: tools for maths accents; a tool
+longdesc that changes page-numbering in frontmatter to arabic; tools for
+longdesc dealing with some annoyances in babel; a tool for making end-
+longdesc environment checking more meaningful; tensorial indexes;
+longdesc support for multi-file documents; tools for easy entry of
+longdesc Spanish index entries; dotless i's and j's for maths fonts; and
+longdesc fancy underlining.
+containersize 12140
+containerchecksum abee3d5674aab634f6134c1576c98f1513605e5e2e242000bfd8b2877f38e7572d73125a1fd9f74cfc684bf4b0ea5f1835944733145750db973ea52a01a528f5
+doccontainersize 942952
+doccontainerchecksum 81c6c074e0ad72a07b8e4fbc88b225ac54aed29c79eab5259cf5a4e5a47b121bbbde32dfeaddbc6ea9a45e7d28288a97692e4e9f7302b3d133ae190add757ca3
+runfiles size=16
+ tex/latex/bezos/accents.sty
+ tex/latex/bezos/arabicfront.sty
+ tex/latex/bezos/babeltools.sty
+ tex/latex/bezos/checkend.sty
+ tex/latex/bezos/dotlessi.sty
+ tex/latex/bezos/esindex.sty
+ tex/latex/bezos/soulpos.sty
+ tex/latex/bezos/subdocs.sty
+ tex/latex/bezos/tensind.sty
+catalogue-ctan /macros/latex/contrib/bezos
+catalogue-date 2016-06-24 19:18:15 +0200
+catalogue-license lppl
+catalogue-topics collection
